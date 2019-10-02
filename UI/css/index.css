@@ -1,0 +1,269 @@
+/* Color Theme Swatches in Hex */
+.Bloggy-Gradient-Blues-1-hex {
+    color: #E1E6FA;
+}
+
+.Bloggy-Gradient-Blues-2-hex {
+    color: #C4D7ED;
+}
+
+.Bloggy-Gradient-Blues-3-hex {
+    color: #ABC8E2;
+}
+
+.Bloggy-Gradient-Blues-4-hex {
+    color: #375D81;
+}
+
+.Bloggy-Gradient-Blues-5-hex {
+    color: #183152;
+}
+
+body {
+    background-color: #E1E6FA;
+    margin: 2px;
+    line-height: 1.8em;
+    color: #E1E6FA;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    height: 95vh;
+    background: #375D81;
+    background-image: url(/UI/img/main_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: right;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+nav {
+    display: flex;
+    /* margin:0 20px; */
+    padding: 0 20px;
+}
+
+.main_logo {
+    font-size: 3.5em;
+}
+
+ul {
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    font-size: 1.5em;
+    margin-left: auto;
+}
+
+li {
+    font-size: 0.8em;
+    padding: 5px;
+    text-decoration: none;
+    /* margin: 5px; */
+}
+
+.heading_block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 2.8em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.heading_text_primary {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+}
+
+.heading_text_secondary {
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: 0.1rem;
+}
+
+.get_started_btn {
+    margin-top: 6rem;
+    width: 180px;
+    height: 60px;
+    border: 2px solid #FFF;
+    background-color: #183152;
+    border-radius: 40px;
+    color: #FFFAFA;
+    font-size: 70%;
+    font-weight: 800;
+    transition: all 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+    /* text-transform: uppercase; */
+    /* font-display:  */
+}
+
+.get_started_btn:hover {
+    border: 2px solid #183152;
+    background-color: #FFFAFA;
+    color: #183152;
+    /* text-shadow: 0px 0px 6px rgba(255, 255, 255, 1); */
+
+}
+
+main {}
+
+.reason_text {
+    color: #183152;
+    text-transform: uppercase;
+    margin:auto;
+    padding: 30px;
+    width: 50%;
+    text-align: center;
+    /* margin-bottom:  */
+}
+
+.section_features {
+    background: #E1E6FA;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-columns:50px 1fr; */
+    grid-template-rows: 1fr;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.features_card {
+    background-color: #FFFAFA;
+    /* clip-path: circle(10% at 0 0); */
+    width: 290px;
+    height: 300px;
+    margin-top: 5px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px #808080;
+    transition: all 0.6s;
+    padding: 10px;
+    color: #183152;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.features_card h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.features_card:hover {
+    background-color: #183152;
+    color: #FFFAFA;
+    transform: translateY(-0.8rem);
+}
+
+.features_picture {
+    width: 100%;
+    height: 40%;
+    /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+    margin-bottom: 20px;
+}
+
+.fast_card .features_picture {
+    background: url(/UI/img/undraw_fast_loading.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.easy_card .features_picture {
+    background: url(/UI/img/undraw_happy_feeling.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reliable_card .features_picture {
+    background: url(/UI/img/undraw_review.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loan_calculator{
+    /* background: #FFFAFA; */
+    margin: 4px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.loan_card{
+    margin: 70px auto;
+    box-shadow: 0px 6px 6px #808080;
+    background: #183152;
+    /* display:flex; */
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
+    line-height: 3.8rem;
+    border-radius: 5px;
+
+}
+
+.loan_card button{
+    border: none;
+    color: #183152;
+    background-color: #FFFAFA;
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    margin: 15px auto;
+    font-size: 1.3em;
+    transition: all 0.5s;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.input_field {
+    width: 30%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+label {
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+    font-size: 1.4em
+}
+
+input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 22px;
+    background-color: #E1E6FA;
+    margin: 5px auto;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.loan_card button:hover{
+    color: #FFFAFA;
+    transform : translateY(-0.3rem);
+    box-shadow: 0px 10px 6px #0E1C2E;
+    background: #375D81;
+}
+
+footer {
+    border-top: #183152 2px dotted;
+    height: 20vh;
+    margin: none;
+    margin-top: 70px;
+}
