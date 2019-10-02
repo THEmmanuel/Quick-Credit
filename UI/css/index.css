@@ -30,7 +30,7 @@ body {
 header {
     height: 95vh;
     background: #375D81;
-    background-image: url(/UI/img/bg_image.svg);
+    background-image: url(../img/bg_image.svg);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: right;
@@ -172,21 +172,21 @@ main {}
 }
 
 .fast_card .features_picture {
-    background: url(/UI/img/undraw_fast_loading.svg);
+    background: url(../img/undraw_fast_loading.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .easy_card .features_picture {
-    background: url(/UI/img/undraw_happy_feeling.svg);
+    background: url(../img/undraw_happy_feeling.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .reliable_card .features_picture {
-    background: url(/UI/img/undraw_review.svg);
+    background: url(../img/undraw_review.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
