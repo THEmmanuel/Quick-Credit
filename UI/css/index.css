@@ -31,6 +31,7 @@ header {
     height: 95vh;
     background: #375D81;
     background-image: url(../img/bg_image.svg);
+    /* background-attachment:  */
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: right;
@@ -57,10 +58,29 @@ ul {
 }
 
 li {
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 5px;
+    margin-right: 14px;
     text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
     /* margin: 5px; */
+}
+
+li a {
+    border: solid 2px #183152;
+    font-weight: 600;
+    height: 25px;
+    background: #FFFAFA;
+    padding: 10px 25px;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+li .sign_up {
+    background: #183152;
+    border: solid 2px #FFFAFA;
 }
 
 .heading_block {
@@ -140,9 +160,10 @@ main {}
     background-color: #FFFAFA;
     /* clip-path: circle(10% at 0 0); */
     width: 290px;
-    height: 300px;
-    margin-top: 5px;
-    margin: auto;
+    height: 320px;
+    -moz-height: 320px;
+    /* margin-top: 5px; */
+    margin: 15px auto;
     border-radius: 5px;
     box-shadow: 0px 6px 6px #808080;
     transition: all 0.6s;
@@ -162,6 +183,7 @@ main {}
     background-color: #183152;
     color: #FFFAFA;
     transform: translateY(-0.8rem);
+    overflow: hidden;
 }
 
 .features_picture {
@@ -221,8 +243,8 @@ main {}
 
 .loan_card button {
     border: none;
-    color: #183152;
-    background-color: #FFFAFA;
+    color: #FFFAFA;
+    background-color: #183152;
     border-radius: 5px;
     width: 140px;
     height: 50px;
@@ -241,6 +263,7 @@ main {}
 }
 
 label {
+    color: #183152;
     display: flex;
     justify-content: right;
     font-weight: bold;
@@ -260,10 +283,12 @@ input {
 }
 
 .loan_card button:hover {
-    color: #FFFAFA;
     transform: translateY(-0.3rem);
     box-shadow: 0px 10px 6px #0E1C2E;
-    background: #375D81;
+}
+
+select{
+    width: 100px;
 }
 
 footer {
@@ -275,7 +300,7 @@ footer {
     text-align: center;
 }
 
-footer span{
+footer span {
     font-weight: 900;
     font-size: 1.4rem;
 }
