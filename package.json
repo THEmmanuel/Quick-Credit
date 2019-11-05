@@ -1,7 +1,7 @@
 {
   "name": "quick-credit",
   "version": "1.0.0",
-  "description": "Quick Credit is a Web application that helps alleviate poverty by giving out soft-loans with reasonable interest rates",
+  "description": "Quick Credit is an online lending platform that provides short term soft loans to individuals. This helps solve problems of financial inclusion as a way to al eviate poverty and empower low income earners.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -68,10 +68,12 @@ li {
     /* margin: 5px; */
 }
 
-li a {
+li .nav_btn {
     border: solid 2px #183152;
     font-weight: 600;
-    height: 25px;
+    height: 40px;
+    overflow: hidden;
+    justify-content: center;
     background: #FFFAFA;
     padding: 10px 25px;
     margin-top: 4px;
@@ -80,6 +82,7 @@ li a {
 
 li .sign_up {
     background: #183152;
+    color: #FFFAFA;
     border: solid 2px #FFFAFA;
 }
 
@@ -132,9 +135,9 @@ li .sign_up {
 
 }
 
-main {}
+/* main {} */
 
-.reason_text {
+.section_text {
     color: #183152;
     text-transform: uppercase;
     margin: auto;
@@ -142,6 +145,10 @@ main {}
     width: 50%;
     text-align: center;
     /* margin-bottom:  */
+}
+
+.steps_text {
+    color: #FFFAFA;
 }
 
 .section_features {
@@ -158,7 +165,7 @@ main {}
 
 .features_card {
     background-color: #FFFAFA;
-    /* clip-path: circle(10% at 0 0); */
+    /* clip-path: circle(25% at 0 0); */
     width: 290px;
     height: 320px;
     -moz-height: 320px;
@@ -214,93 +221,73 @@ main {}
     background-position: center;
 }
 
-.loan_calculator {
-    /* background: #FFFAFA; */
+.steps_container {
     margin: 40px auto;
     justify-content: center;
-
     flex-wrap: wrap;
     background-color: #183152;
     padding: 50px;
-    -webkit-clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 25px, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 200px, 100% 100%, 0% 100%);
 }
 
-.loan_card {
-    margin: 100px auto;
+.steps_main {
+    margin-top: 100px;
+}
+
+.steps_info {
+    align-content: center;
+}
+
+.steps_card {
+    margin: 30px auto;
+    color: #183152;
     box-shadow: 0px 6px 6px #808080;
     background: #FFFAFA;
-    /* display:flex; */
-    width: 60%;
-    padding: 50px;
+    /* display:flex; */
+    width: 40%;
+    padding: 30px;
     text-align: center;
     justify-content: center;
     padding: 25px;
-    line-height: 3.8rem;
+    line-height: 2.5rem;
     border-radius: 5px;
-
 }
 
-.loan_card button {
-    border: none;
+.steps_info button {
+    display: block;
+    border: solid 2px #FFFAFA;
     color: #FFFAFA;
     background-color: #183152;
     border-radius: 5px;
-    width: 140px;
+    width: 160px;
     height: 50px;
     cursor: pointer;
-    margin: 15px auto;
+    margin: 4px auto;
     font-size: 1.3em;
     transition: all 0.5s;
     font-weight: 800;
-    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.input_field {
-    width: 30%;
-    text-align: center;
-    margin: 10px auto;
-}
-
-label {
+.steps_info button:hover{
+    background: #FFFAFA;
     color: #183152;
-    display: flex;
-    justify-content: right;
-    font-weight: bold;
-    font-size: 1.4em
-}
-
-input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 22px;
-    background-color: #E1E6FA;
-    margin: 5px auto;
-    font-size: 1.5em;
-    color: #000;
-}
-
-.loan_card button:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0px 10px 6px #0E1C2E;
-}
-
-select{
-    width: 100px;
 }
 
 footer {
     border-top: #183152 2px dotted;
-    height: 20vh;
+    height: 10vh;
     margin: none;
     margin-top: 70px;
     color: #183152;
     text-align: center;
 }
 
+
 footer span {
+    display: block;
+    margin: 30px auto;
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
