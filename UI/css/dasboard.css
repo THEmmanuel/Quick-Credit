@@ -22,9 +22,9 @@
 
 body {
     margin: 2px;
-    background-color: #F2F2F2;
+    background-color: #183152;
     line-height: 1.8em;
-    color: #E1E6FA;
+    color: #FFFAFA;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -36,27 +36,34 @@ body {
     top: 0;
     left: 0;
     /* overflow-x: hidden; */
-    background: #E1E6FA;
+    background: #183152;
     color: #FFFAFA;
-    padding: 15px;
+    /* padding-left: 0; */
+    padding: 5px;
+    box-shadow: 0px 6px 6px #808080;
+    border-radius: 0 10px 10px 0 ;
 }
 
 .nav_bar_btn {
     width: 100%;
-    height: 40px;
+    height: 35px;
     border: none;
     margin-bottom: 10px;
     display: block;
-    background-color: #183152;
+    background-color: #375D81;
     color: #FFFAFA;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 5px;
 }
 
 .nav_bar_side ul {
     padding: 0;
     margin: 0;
     width: 100%;
-    /* justify-content: start; */
-    list-style: none outside;
-    /* margin-left: auto; */
 }
+
+.nav_bar_side h1{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: #375D81 2px solid;
+}
+
