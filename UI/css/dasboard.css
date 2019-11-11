@@ -29,8 +29,9 @@ body {
 }
 
 .nav_bar_side {
+    /* display: none; */
     height: 100vh;
-    width: 15vw;
+    width: 220px;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -39,9 +40,9 @@ body {
     background: #183152;
     color: #FFFAFA;
     /* padding-left: 0; */
-    padding: 5px;
-    box-shadow: 0px 6px 6px #808080;
-    border-radius: 0 10px 10px 0 ;
+    padding: 6px;
+    box-shadow: 0px 6px 6px #0A1D36;
+    border-radius: 0 10px 10px 0;
 }
 
 .nav_bar_btn {
@@ -50,9 +51,20 @@ body {
     border: none;
     margin-bottom: 10px;
     display: block;
-    background-color: #375D81;
     color: #FFFAFA;
-    border-radius: 5px;
+    background: #183152;
+}
+
+.nav_bar_btn:hover {
+    background-color: #375D81;
+    border-radius: 2px;
+    border: #FFFAFA 1px solid;
+}
+
+.nav_bar_btn:focus {
+    background-color: #001D42;
+    border-radius: 2px;
+    border: #FFFAFA 1px solid;
 }
 
 .nav_bar_side ul {
@@ -61,9 +73,13 @@ body {
     width: 100%;
 }
 
-.nav_bar_side h1{
+.nav_bar_side h1 {
     text-align: center;
     padding-bottom: 20px;
     border-bottom: #375D81 2px solid;
 }
 
+.loans_options {
+    margin-left: 220px;
+    padding: 20px 30px;
+}
