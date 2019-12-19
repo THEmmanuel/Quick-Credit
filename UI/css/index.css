@@ -39,6 +39,10 @@ header {
     -moz-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+.bold {
+    font-weight: bolder;
+}
+
 nav {
     display: flex;
     /* margin:0 20px; */
