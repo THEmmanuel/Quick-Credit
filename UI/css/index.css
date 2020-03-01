@@ -28,12 +28,12 @@ body {
 }
 
 header {
-    height: 65vh;
+    height: 500px;
     background: #FFF;
     background-image: url(../img/bg_image.svg);
     /* background-attachment:  */
     background-repeat: no-repeat;
-    background-size: 32%;
+    background-size: 600px;
     background-position: right;
     /* padding: 5px; */
     box-shadow: 0px 3px 6px #808080;
@@ -43,14 +43,16 @@ header {
     font-weight: bolder;
 }
 
+
+
 nav {
     display: flex;
     /* margin:0 20px; */
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .main_logo {
-    font-size: 40px;
+    font-size: 2em;
     color: #183152;
 }
 
@@ -80,27 +82,28 @@ li .nav_btn {
     overflow: hidden;
     justify-content: center;
     background: #FFFAFA;
-    padding: 10px 25px;
+    padding: 10px;
     margin-top: 4px;
     border-radius: 10px;
 }
 
-li .sign_up {
+li .sign_in {
     background: #183152;
     color: #FFFAFA;
     border: solid 2px #FFFAFA;
 }
 
 .heading_block {
-    width: 500px;
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    line-height: 2.8em;
+    width: 40%;
+    /* position: absolute; */
+    /* top: 30%; */
+    /* left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    margin: auto;
+    line-height: 2.2em;
     font-weight: 300;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 .heading_text_primary {
@@ -117,7 +120,7 @@ li .sign_up {
 }
 
 .primary_cta_btn {
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 150px;
     height: 50px;
     border: 2px solid #FFF;
@@ -141,7 +144,12 @@ li .sign_up {
 
 /* main {} */
 
-.section_text {
+.container{
+    box-shadow: 0px 3px 6px #808080;
+    padding: 20px;
+}
+
+.section_heading {
     color: #183152;
     text-transform: capitalize;
     margin: auto;
@@ -152,10 +160,10 @@ li .sign_up {
 }
 
 .steps_text {
-    color: #FFFAFA;
+    color: #183152;
 }
 
-.section_features {
+.card_container {
     background: #F2F2F2;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -165,9 +173,11 @@ li .sign_up {
     justify-content: center;
     max-width: 1020px;
     margin: auto;
+    /* box-shadow: 0px 3px 6px #808080; */
+
 }
 
-.features_card {
+.card {
     background-color: #DEDEDE;
     /* clip-path: circle(25% at 0 0); */
     width: 290px;
@@ -196,7 +206,7 @@ li .sign_up {
     overflow: hidden;
 }
 
-.features_picture {
+.card_picture {
     width: 100%;
     height: 40%;
     /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
@@ -230,18 +240,15 @@ li .sign_up {
     margin: auto;
 }
 
+
+/* Steps */
 .steps_container {
-    margin: 40px auto;
+    margin: 20px auto;
     justify-content: center;
-    flex-wrap: wrap;
-    background-color: #183152;
-    padding: 50px;
-    -webkit-clip-path: polygon(0 0, 100% 25px, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 200px, 100% 100%, 0% 100%);
 }
 
 .steps_main {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .steps_info {
@@ -249,40 +256,95 @@ li .sign_up {
 }
 
 .steps_card {
-    margin: 30px auto;
+    margin: 10px auto;
     color: #183152;
-    box-shadow: 0px 6px 6px #808080;
-    background: #FFFAFA;
+    /* box-shadow: 0px 6px 6px #808080; */
+    /* background: #FFFAFA; */
     /* display:flex; */
     width: 40%;
     padding: 30px;
     text-align: center;
-    justify-content: center;
-    padding: 25px;
+    /* justify-content: center; */
+    padding: 10px;
     line-height: 2.5rem;
     border-radius: 5px;
+    display: flex;
 }
 
 .steps_info button {
     display: block;
-    border: solid 2px #FFFAFA;
-    color: #FFFAFA;
-    background-color: #183152;
-    border-radius: 5px;
-    width: 160px;
-    height: 50px;
     cursor: pointer;
     margin: 4px auto;
-    font-size: 1.3em;
-    transition: all 0.5s;
-    font-weight: 800;
-    text-decoration: none;
 }
 
 .steps_info button:hover {
     background: #FFFAFA;
     color: #183152;
 }
+
+.steps_picture{
+    width: 40%;
+    height: 250px;
+}
+
+
+.steps_register .steps_picture{
+    background: url(../img/undraw_Login.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.steps_login .steps_picture{
+    background: url(../img/undraw_fill_forms.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.steps_request .steps_picture{
+    background: url(../img/undraw_transfer_money.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.steps_text {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Reviews */
+.reviews_container{
+    background-color: #183152;
+}
+
+.reviews_container .section_heading{
+    color: #FFF;
+}
+
+.reviews_container .card_container {
+    background-color: #183152;
+}
+
+.reviews_container .card{
+    background-color: #283F5E;
+    color: #FFF;
+}
+
+.user_picture{
+    background: url(../img/Userpic.png);
+    margin: auto;
+    border-radius: 50%;
+    width: 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Footer */
 
 footer {
     border-top: #183152 2px dotted;
@@ -299,4 +361,47 @@ footer span {
     margin: 30px auto;
     font-weight: 900;
     font-size: 1.1rem;
+}
+
+ 
+@media(max-width: 480px){
+    .heading_block{
+        width: 70%;
+        line-height: 1.8em;
+    }
+
+    .section_heading{
+        width: 250px;
+        margin: auto;
+        display: block;
+    }
+
+    header{
+        background-size: 350px;
+        background-position: center;
+    }
+
+    nav{
+        margin: 5px auto;
+    }
+
+    .main_logo{
+        font-size: 1.5em;
+    }
+
+    .steps_card{
+        display: block;
+        width: 80%;
+    }
+
+    .steps_picture{
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .steps_text{
+        width: 100%;
+        margin: 0 10px;
+    }
 }
