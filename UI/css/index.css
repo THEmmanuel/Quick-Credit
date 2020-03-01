@@ -21,22 +21,22 @@
 
 body {
     background-color: #F2F2F2;
-    margin: 2px;
+    margin: 0;
     line-height: 1.8em;
     color: #E1E6FA;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
-    height: 95vh;
-    background: #375D81;
+    height: 65vh;
+    background: #FFF;
     background-image: url(../img/bg_image.svg);
     /* background-attachment:  */
     background-repeat: no-repeat;
-    background-size: 35%;
+    background-size: 32%;
     background-position: right;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    -moz-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    /* padding: 5px; */
+    box-shadow: 0px 3px 6px #808080;
 }
 
 .bold {
@@ -50,7 +50,8 @@ nav {
 }
 
 .main_logo {
-    font-size: 3.5em;
+    font-size: 40px;
+    color: #183152;
 }
 
 ul {
@@ -91,47 +92,46 @@ li .sign_up {
 }
 
 .heading_block {
+    width: 500px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
     line-height: 2.8em;
     font-weight: 300;
-    text-transform: uppercase;
+    margin-top: 15px;
 }
 
 .heading_text_primary {
-    font-size: 2em;
+    font-size: 1.7rem;
     margin: 0;
-    font-weight: 600;
-    letter-spacing: 0.5rem;
+    font-weight: 800;
+    color: #183152;
 }
 
 .heading_text_secondary {
-    font-weight: 500;
-    font-size: 0.7em;
-    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #3E5067;
 }
 
-.get_started_btn {
+.primary_cta_btn {
     margin-top: 4rem;
-    width: 180px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
     border: 2px solid #FFF;
     background-color: #183152;
-    border-radius: 40px;
+    border-radius: 10px;
     color: #FFFAFA;
-    font-size: 70%;
-    font-weight: 800;
+    font-size: large;
+    font-weight: 700;
     transition: all 0.5s;
     cursor: pointer;
     overflow: hidden;
-    /* text-transform: uppercase; */
-    /* font-display:  */
 }
 
-.get_started_btn:hover {
+.primary_cta_btn:hover {
     border: 2px solid #183152;
     background-color: #FFFAFA;
     color: #183152;
@@ -143,7 +143,7 @@ li .sign_up {
 
 .section_text {
     color: #183152;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin: auto;
     padding: 30px;
     width: 50%;
@@ -168,7 +168,7 @@ li .sign_up {
 }
 
 .features_card {
-    background-color: #FFFAFA;
+    background-color: #DEDEDE;
     /* clip-path: circle(25% at 0 0); */
     width: 290px;
     height: 320px;
@@ -176,7 +176,6 @@ li .sign_up {
     /* margin-top: 5px; */
     margin: 15px auto;
     border-radius: 5px;
-    box-shadow: 0px 6px 6px #808080;
     transition: all 0.6s;
     padding: 10px;
     color: #183152;
@@ -223,6 +222,12 @@ li .sign_up {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.loan_option_btn {
+    width: 200px;
+    display: block;
+    margin: auto;
 }
 
 .steps_container {
@@ -274,7 +279,7 @@ li .sign_up {
     text-decoration: none;
 }
 
-.steps_info button:hover{
+.steps_info button:hover {
     background: #FFFAFA;
     color: #183152;
 }
