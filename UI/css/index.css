@@ -238,6 +238,7 @@ li .sign_in {
     width: 200px;
     display: block;
     margin: auto;
+    overflow: hidden;
 }
 
 
